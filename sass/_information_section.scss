@@ -1,0 +1,139 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+.section-information {
+  padding: 23px;
+  &__company {
+    font-size: 0.7em;
+    font-weight: 700;
+    color: v.$Orange;
+    text-transform: uppercase;
+    margin-bottom: 17px;
+  }
+  &__title {
+    // border: 1px solid red;
+    font-size: 1.4em;
+    width: 200px;
+    margin-bottom: 10px;
+    color: v.$Very-vark-blue;
+  }
+  &__description {
+    font-size: 1.1em;
+    margin-bottom: 19px;
+    color: v.$Dark-grayish-blue;
+  }
+  .div1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+  &__discount {
+    display: flex;
+    gap: 20px;
+    color: v.$Very-vark-blue;
+    font-size: 1.5em;
+    font-weight: 700;
+    span {
+      color: v.$Orange;
+      font-size: 0.6em;
+    }
+  }
+  &__price {
+    color: v.$Dark-grayish-blue;
+    font-size: 0.8em;
+    font-weight: 4;
+    text-decoration: line-through;
+  }
+  .div2 {
+    div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 25px;
+    }
+  }
+  &__minus {
+    // border: 1px solid red;
+    height: 40px;
+    padding: 18px 21px;
+    background-color: v.$White;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__number {
+    // border: 1px solid red;
+    border: none;
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+    background-color: v.$White;
+    height: 40px;
+    outline: none;
+  }
+  &__plus {
+    // border: 1px solid red;
+    height: 40px;
+    padding: 13px 19px;
+    background-color: v.$White;
+    cursor: pointer;
+  }
+  &__button {
+    @include m.button-web;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+  @media (min-width: v.$Width-media-desktop) {
+    flex: 1;
+    padding: 120px 90px 90px 90px;
+    // border: 1px solid red;
+    height: 760px;
+    &__company {
+      font-size: 0.75em;
+      margin-bottom: 30px;
+    }
+    &__title {
+      // border: 1px solid red;
+      font-size: 1.9em;
+      width: 300px;
+      margin-bottom: 40px;
+    }
+    &__description {
+      font-size: 1.3em;
+      line-height: 33px;
+      margin-bottom: 60px;
+      color: v.$Dark-grayish-blue;
+    }
+    .div1 {
+      // border: 1px solid blue;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 80px;
+    }
+    &__discount {
+      // border: 1px solid red;
+      align-items: center;
+    }
+    .div2 {
+      // border: 1px solid red;
+      display: flex;
+      align-items: flex-end;
+      gap: 10px;
+      div {
+        margin-bottom: unset;
+      }
+    }
+    &__button {
+      @include m.button-web;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

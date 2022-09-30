@@ -18,6 +18,54 @@
   <body>
     <!-- MAIN CONTAINER  -->
     <main class="main-container">
+      <!-- 📌 Start - Modal desktop carrousel -->
+      <div class="modal-desktop-carrousel">
+        <section class="modal-desktop-carrousel-section-carrousel">
+          <article class="article-carrousel">
+            <img
+              class="modal-desktop-carrousel-section-carrousel__close"
+              src="./images/icon-close.svg"
+              alt="close icon"
+            />
+            <img
+              class="modal-desktop-carrousel-section-carrousel__previous"
+              src="./images/icon-previous.svg"
+              alt="previous icon"
+            />
+            <div class="modal-desktop-carrousel-section-carrousel__image"></div>
+            <img
+              class="modal-desktop-carrousel-section-carrousel__next"
+              src="./images/icon-next.svg"
+              alt="next icon"
+            />
+          </article>
+          <article
+            class="modal-desktop-carrousel-section-carrousel__thumbnails"
+          >
+            <img
+              id="5"
+              src="./images/image-product-1-thumbnail.jpg"
+              alt="thumbnail 1"
+            />
+            <img
+              id="6"
+              src="./images/image-product-2-thumbnail.jpg"
+              alt="thumbnail 2"
+            />
+            <img
+              id="7"
+              src="./images/image-product-3-thumbnail.jpg"
+              alt="thumbnail 3"
+            />
+            <img
+              id="8"
+              src="./images/image-product-4-thumbnail.jpg"
+              alt="thumbnail 4"
+            />
+          </article>
+        </section>
+      </div>
+      <!-- 📌 End -Modal desktop carrousel -->
       <!-- HEADER WEB -->
       <header class="header-web">
         <!-- SECTION LEFT -->
@@ -41,25 +89,25 @@
               <li><a href="#">Contact</a></li>
             </ul>
           </nav>
+          <!-- 📌 Start - Modal mobile menu -->
+          <div class="modal-mobile-menu">
+            <nav class="modal-mobile-menu__nav">
+              <img src="./images/icon-close.svg" alt="close icon" />
+              <ul>
+                <li><a href="#">Collections</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+          <!-- 📌 End - Modal mobile menu -->
         </section>
-        <!-- 📌 Start - Modal mobil menu -->
-        <div class="modal-mobile-menu">
-          <nav class="modal-mobile-menu__nav">
-            <img src="./images/icon-close.svg" alt="close icon" />
-            <ul>
-              <li><a href="#">Collections</a></li>
-              <li><a href="#">Men</a></li>
-              <li><a href="#">Women</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-        <!-- 📌 End - Modal mobil menu -->
         <!-- SECTION RIGHT -->
         <section class="section-right">
           <div class="section-right__purchase">
-            <div class="section-right__purchase--number">3</div>
+            <div class="section-right__purchase--number">0</div>
             <img src="./images/icon-cart.svg" alt="cart icon" />
           </div>
           <img
@@ -71,16 +119,14 @@
         <!-- 📌 Start - Modal mobil / desktop cart -->
         <div class="modal-both-ways-cart">
           <div class="modal-both-ways-cart__cart">Cart</div>
-          <div>
+          <div class="line"></div>
+          <div class="modal-both-ways-cart__container">
             <img
               class="modal-both-ways-cart__thumbnail"
               src="./images/image-product-1-thumbnail.jpg"
               alt="thumbnail"
             />
-            <div class="modal-both-ways-cart__phrases">
-              <p>Sneaker Company Fall Limited</p>
-              <p>$125.000 x 3 <span>$375.00</span></p>
-            </div>
+            <div class="modal-both-ways-cart__phrases"></div>
             <img
               class="modal-both-ways-cart__delete"
               src="./images/icon-delete.svg"
@@ -90,98 +136,98 @@
           <button class="modal-both-ways-cart__button">Checkout</button>
         </div>
         <!-- 📌 End - Modal mobil / desktop cart -->
+        <!-- 📌 Start - Modal empty mobil / desktop cart -->
+        <div class="modal-both-ways-cart-empty">
+          <div class="modal-both-ways-cart-empty__cart">Cart</div>
+          <div class="modal-both-ways-cart-empty__container">
+            <p>Your cart is empty</p>
+          </div>
+        </div>
+        <!-- 📌 End - Modal empty mobil / desktop cart -->
       </header>
-      <!-- CARROUSEL SECTION  -->
-      <section class="section-carrousel">
-        <article>
-          <img
-            class="section-carrousel__previous"
-            src="./images/icon-previous.svg"
-            alt="previous icon"
-          />
-          <img
-            class="section-carrousel__image"
-            src="./images/image-product-1.jpg"
-            alt="product-1"
-          />
-          <img
-            class="section-carrousel__next"
-            src="./images/icon-next.svg"
-            alt="next icon"
-          />
-        </article>
-        <article class="section-carrousel__thumbnails">
-          <img src="./images/image-product-1-thumbnail.jpg" alt="thumbnail 1" />
-          <img src="./images/image-product-2-thumbnail.jpg" alt="thumbnail 2" />
-          <img src="./images/image-product-3-thumbnail.jpg" alt="thumbnail 3" />
-          <img src="./images/image-product-4-thumbnail.jpg" alt="thumbnail 4" />
-        </article>
-      </section>
-      <!-- INFORMATION SECTION -->
-      <section class="section-information">
-        <h2 class="section-information__company">sneaker company</h2>
-        <h2 class="section-information__title">Fall Limited Edition Sneakers</h2>
-        <p class="section-information__description">
-          These low-profile sneakers are your perfect casual wear companion.
-          Featuring a durable rubber outer sole, they’ll withstand everything the
-          weather can offer.
-        </p>
-        <div>
-          <div class="section-information__discount">
-            $125.00 <span>50%</span>
-          </div>
-          <div class="section-information__price">$250.00</div>
-        </div>
-        <div>
-          <div>
-            <img
-              class="section-information__minus"
-              src="./images/icon-minus.svg"
-              alt="minus"
-            />
-            <input class="section-information__number" type="number" value="0" />
-            <img
-              class="section-information__plus"
-              src="./images/icon-plus.svg"
-              alt="plus"
-            />
-          </div>
-          <button class="section-information__button">
-        </div>
-          <img src="./images/icon-cart.svg" alt="cart icon" /> Add to cart
-        </button>
-      </section>
-    </main>
-
-    <!-- 📌 Start - Modal desktop carrousel -->
-    <div class="modal-desktop-carrousel">
-        <section class="modal-desktop-carrousel-section-carrousel">
+      <!-- REST -->
+      <div class="rest">
+        <!-- CARROUSEL SECTION  -->
+        <section class="section-carrousel">
           <article>
             <img
-              class="modal-desktop-carrousel-section-carrousel__previous"
+              class="section-carrousel__previous"
               src="./images/icon-previous.svg"
               alt="previous icon"
             />
+            <div class="section-carrousel__image"></div>
             <img
-              class="modal-desktop-carrousel-section-carrousel__image"
-              src="./images/image-product-1.jpg"
-              alt="product-1"
-            />
-            <img
-              class="modal-desktop-carrousel-section-carrousel__next"
+              class="section-carrousel__next"
               src="./images/icon-next.svg"
               alt="next icon"
             />
           </article>
-          <article class="modal-desktop-carrousel-section-carrousel__thumbnails">
-            <img src="./images/image-product-1-thumbnail.jpg" alt="thumbnail 1" />
-            <img src="./images/image-product-2-thumbnail.jpg" alt="thumbnail 2" />
-            <img src="./images/image-product-3-thumbnail.jpg" alt="thumbnail 3" />
-            <img src="./images/image-product-4-thumbnail.jpg" alt="thumbnail 4" />
+          <article class="section-carrousel__thumbnails">
+            <img
+              id="1"
+              src="./images/image-product-1-thumbnail.jpg"
+              alt="thumbnail 1"
+            />
+            <img
+              id="2"
+              src="./images/image-product-2-thumbnail.jpg"
+              alt="thumbnail 2"
+            />
+            <img
+              id="3"
+              src="./images/image-product-3-thumbnail.jpg"
+              alt="thumbnail 3"
+            />
+            <img
+              id="4"
+              src="./images/image-product-4-thumbnail.jpg"
+              alt="thumbnail 4"
+            />
           </article>
         </section>
-    </div>
-    <!-- 📌 End -Modal desktop carrousel -->
+        <!-- INFORMATION SECTION -->
+        <section class="section-information">
+          <h2 class="section-information__company">sneaker company</h2>
+          <h2 class="section-information__title">
+            Fall Limited Edition Sneakers
+          </h2>
+          <p class="section-information__description">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+          <div class="div1">
+            <div class="section-information__discount">
+              $125.00 <span>50%</span>
+            </div>
+            <div class="section-information__price">$250.00</div>
+          </div>
+          <div class="div2">
+            <div>
+              <img
+                class="section-information__minus"
+                src="./images/icon-minus.svg"
+                alt="minus"
+              />
+              <input
+                class="section-information__number"
+                type="text"
+                value="0"
+              />
+              <img
+                class="section-information__plus"
+                src="./images/icon-plus.svg"
+                alt="plus"
+              />
+            </div>
+            <button class="section-information__button">
+              <img src="./images/icon-cart-white.svg" alt="cart icon" /> Add to
+              cart
+            </button>
+          </div>
+        </section>
+      </div>
+    </main>
 
     <!-- FOOTER -->
     <footer class="attribution">
@@ -190,5 +236,7 @@
         >Frontend Mentor</a
       >. Coded by <a href="#" target="_blank">Pablo Belda</a>.
     </footer>
+    <!-- SCRIPT JS  -->
+    <script src="./js/main.js"></script>
   </body>
 </html>

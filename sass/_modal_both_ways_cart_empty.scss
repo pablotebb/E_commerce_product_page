@@ -1,0 +1,36 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+.modal-both-ways-cart-empty {
+  display: none;
+  position: absolute;
+  width: 370px;
+  height: 227px;
+  top: 90px;
+  left: 970px;
+  background-color: v.$White;
+  border-radius: 8px;
+  box-shadow: 4px 4px 15px v.$Grayish-blue;
+  &__cart {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: v.$Black;
+    padding: 20px;
+    border-bottom: 1px solid v.$Grayish-blue;
+  }
+  &__container {
+    // border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+    font-weight: 700;
+    color: v.$Dark-grayish-blue;
+  }
+}
+
+.display-block {
+  display: block;
+}
