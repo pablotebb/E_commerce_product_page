@@ -220,7 +220,7 @@ function previous(container) {
   let slide;
 
   if (num > 0) {
-    slide = `../images/image-product-${num}.jpg`;
+    slide = `./images/image-product-${num}.jpg`;
     container.innerHTML = `<img style="width:100%" src="${slide}" />`;
     // Chage border thumbnail
     drawBorder(containerArrayThumbs[0], num - 1);
@@ -234,7 +234,7 @@ function next(container) {
   let slide;
 
   if (num < 5) {
-    slide = `../images/image-product-${num}.jpg`;
+    slide = `./images/image-product-${num}.jpg`;
     container.innerHTML = `<img style="width:100%" src="${slide}" />`;
     // Chage border thumbnail
     drawBorder(containerArrayThumbs[0], num - 1);
@@ -244,7 +244,7 @@ function next(container) {
 }
 
 function applyThumbnailPoster(num = 1, container) {
-  slide = `../images/image-product-${num}.jpg`;
+  slide = `./images/image-product-${num}.jpg`;
   container.innerHTML = `<img style="width:100%" src="${slide}" />`;
 }
 
